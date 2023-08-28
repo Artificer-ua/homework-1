@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='clean_folder',
-      versiom='0.0.3',
+      version='0.0.4',
       packages=['clean_folder'],
       # packages=find_packages(),
       author='Serhii',
