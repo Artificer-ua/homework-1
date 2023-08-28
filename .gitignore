@@ -1,12 +1,10 @@
+_normalize.py
+_scan.py
+_sort.py
+files_generator.py
 Homeworks/add_info.py
 Homeworks/mod_3.py
 Homeworks/mod_4.py
 Homeworks/mod_5.py
 Homeworks/mod_6.py
-_scan.py
-_sort.py
-normalize.py
-files_generator.py
-_normalize.py
-__pycache__/normalize.cpython-311.pyc
 Homeworks/mod7.py
