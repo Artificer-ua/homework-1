@@ -169,7 +169,7 @@ class AddressBook(UserDict):
     # not needed for this class. there are no problematic attributes
     # placeholder __getstate__
     def __getstate__(self):
-        attributes = self.__dict__.copy()
+        attributes = {**self.__dict__}
         return attributes
 
     # not needed too
