@@ -124,11 +124,11 @@ phones: {'; '.join(p.value for p in self.phones)} b-day: {self.birthday}" \
 # Save and control records.
 # Add records, find and delete records for key: name
 class AddressBook(UserDict):
-    # def __init__(self, __dict: None = ...):
-    #     super().__init__(__dict)
-    #     self.keyword = None
-
     # using for calling iter with parameters
+    def __init__(self, dict=None):
+        super().__init__(dict)
+        self.file_name_bin: str = 'address_book.bin'
+
     def __call__(self, n):
         # set n, records display count
         self.iter_step = n
@@ -176,6 +176,20 @@ class AddressBook(UserDict):
     # placeholder __setstate__
     def __setstate__(self, value):
         self.__dict__ = value
+
+    # load from file
+    def load(self):
+        with open(self.file_name_bin, "rb") as fh:
+            unpacked = pickle.load(fh)
+        # clear dict before writing new data
+        self.__dict__.clear()
+        # write new data
+        self.__dict__.update(unpacked.__dict__)
+
+    # save data from class
+    def save(self):
+        with open(self.file_name_bin, "wb") as fh:
+            pickle.dump(book, fh)
 
     # add record
     def add_record(self, record):
@@ -314,18 +328,12 @@ for count, find_result in enumerate(book.find_all(search_string)):
     print(f"Search result #{count+1}: {find_result}")
 
 # serialize address book
-file_name_bin = 'address_book.bin'
-encoded_address_book = pickle.dumps(book)
-
-with open(file_name_bin, "wb") as fh:
-    pickle.dump(book, fh)
-
+book.save()
 
 print("\n\nDeserialized address book:")
-# deserialized address book
-with open(file_name_bin, "rb") as fh:
-    unpacked = pickle.load(fh)
 
-# book(0) is the same as book(1)
-for index, page in enumerate(unpacked(1)):
+# new Address book with saved data
+book_load = AddressBook()
+book_load.load()
+for index, page in enumerate(book_load(1)):
     print(f"Address book page {index+1}: {page}")
