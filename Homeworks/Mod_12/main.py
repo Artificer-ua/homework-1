@@ -327,7 +327,7 @@ print(f"\nYour search: {search_string}" if book.find_all(search_string) else f"\
 for count, find_result in enumerate(book.find_all(search_string)):
     print(f"Search result #{count+1}: {find_result}")
 
-# serialize address book
+# serialize address book.
 book.save()
 
 print("\n\nDeserialized address book:")
