@@ -1,0 +1,168 @@
+<mxfile host="65bd71144e">
+    <diagram id="9qc2CezpNas57NqQSyqV" name="Page-1">
+        <mxGraphModel dx="729" dy="385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="125" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="104">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="438" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="126" value="" style="edgeStyle=none;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="104" target="120">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="330" y="70" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" value="main.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="10" width="225" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class AbstractOutputHandler&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="104">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class OutputHandler&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="104">
+                    <mxGeometry x="20" y="57" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="106">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="438" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="106" value="note_book.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="161.5" width="225" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class NoteRecord&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="106">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class NoteBook&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="106">
+                    <mxGeometry x="20" y="57" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="" style="edgeStyle=none;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="110" target="104">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="55" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" value="decorators.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry y="10" width="225" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def input_error()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="110">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="60" as="sourcePoint"/>
+                        <mxPoint x="550" y="60" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="commands.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="10" width="225" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def get_help()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="116">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def goodbye()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="116">
+                    <mxGeometry x="20" y="57" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def hello()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="116">
+                    <mxGeometry x="20" y="84" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;command_dict&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="116">
+                    <mxGeometry x="20" y="111" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="" style="edgeStyle=none;html=1;fontSize=14;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="104">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="170" y="160" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="120" value="address_book.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="52.5" y="161.5" width="225" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class AddressBook&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="120">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Record&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="120">
+                    <mxGeometry x="20" y="57" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="128">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="163" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="133" value="" style="edgeStyle=none;html=1;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="128">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="128" value="fields_classes.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="52.5" y="340" width="225" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Field&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="32" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Name&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="53.5" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Phone&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="75" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Birthday&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="96.5" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Address&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="118" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Email&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="139.5" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Date&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="161" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Note&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="182.5" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Tag&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="128">
+                    <mxGeometry x="15" y="204" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="141">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="435" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="146" value="" style="edgeStyle=none;html=1;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="141">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="240" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="141" value="backup.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="340" width="225" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Storage&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="141">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class PickleStorage&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="141">
+                    <mxGeometry x="20" y="57" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;class Backup&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="141">
+                    <mxGeometry x="20" y="84" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="" style="edgeStyle=none;html=1;fontSize=14;" edge="1" parent="1" source="147">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="147" value="file_sorter.py" style="swimlane;strokeWidth=1;fontSize=14;fillColor=default;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="190" width="225" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def normalize()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="147">
+                    <mxGeometry x="10" y="30" width="210" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def move_file()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="147">
+                    <mxGeometry x="20" y="57" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:'JetBrains Mono',monospace;font-size:9,8pt;&quot;&gt;def remove_empty_folders()&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;fontSize=13;" vertex="1" parent="147">
+                    <mxGeometry x="20" y="84" width="180" height="21.5" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
