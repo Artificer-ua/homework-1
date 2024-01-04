@@ -1,1 +1,0 @@
-SELECT AVG(grade)::numeric(10,2) FROM grades;
