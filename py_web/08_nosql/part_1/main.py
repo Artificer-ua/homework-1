@@ -59,7 +59,7 @@ if __name__ == "__main__":
             print(f"Search by tag: {tag_search}")
             result = search_quote_by_tag(tag_search)
         elif command.startswith("tags:"):
-            tags_search = command.split(":")[1].split(",") # list of tags
+            tags_search = command.split(":")[1].split(",")  # list of tags
             print(f"Search by tags list: {tags_search}")
             result = search_quote_by_tags(tags_search)
         elif command == "exit":
@@ -70,6 +70,8 @@ if __name__ == "__main__":
 
         # display results
         for quote in result:
-            print(f"Author: {quote.author.fullname.encode('utf-8')}\n"
-                  f"Tags: {[tag.encode('utf-8') for tag in quote.tags]}\n"
-                  f"Quote:  {quote.text.encode('utf-8')}")
+            print(
+                f"Author: {quote.author.fullname.encode('utf-8')}\n"
+                f"Tags: {[tag.encode('utf-8') for tag in quote.tags]}\n"
+                f"Quote:  {quote.text.encode('utf-8')}"
+            )

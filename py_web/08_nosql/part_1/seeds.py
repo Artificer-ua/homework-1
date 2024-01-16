@@ -1,9 +1,11 @@
-from connect import uri
-from mongoengine import connect
-from pathlib import Path
-from models import Author, Quote
 import json
 import logging
+from pathlib import Path
+
+from mongoengine import connect
+
+from connect import uri
+from models import Author, Quote
 
 connect(host=uri)
 
@@ -38,7 +40,7 @@ def seed_quotes(filename: str):
             new_item = Quote(
                 tags=item.get("tags"),
                 author=Author.objects(fullname=item.get("author")).first(),
-                text=item.get("quote")
+                text=item.get("quote"),
             )
             new_item.save()
     else:
