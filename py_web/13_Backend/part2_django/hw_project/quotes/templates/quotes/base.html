@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'quotes/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="row header-box pt-3 mb-3">
+        <div class="col-md-8">
+            <h1>
+                <a href="/" style="text-decoration: none">Quotes to Scrape</a>
+            </h1>
+        </div>
+
+        <div class="col-md-4">
+            {% if user.is_authenticated %}
+            <form method="post" action="{% url 'app_users:signout' %}">
+                {% csrf_token %}
+                Welcome, <b>{{ user.username }}</b>!
+                <!--                <button type="submit" class="btn btn-outline-danger">logout</button>-->
+                <button type="submit" class="btn btn-outline-danger"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                    logout
+                </button>
+            </form>
+            <br>
+            <a href="{% url 'quotes:add-author' %}" class="btn btn-primary"
+               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Add author</a>
+            <a href="{% url 'quotes:add-quote' %}" class="btn btn-primary"
+               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Add quote</a>
+
+            {% else %}
+
+            <a href="{% url 'app_users:signup' %}" class="btn btn-primary"
+               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Register
+            </a>
+            <a href="{% url 'app_users:signin' %}" class="btn btn-primary"
+               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Login
+            </a>
+            {% endif %}
+        </div>
+    </div>
+
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+</body>
+</html>
