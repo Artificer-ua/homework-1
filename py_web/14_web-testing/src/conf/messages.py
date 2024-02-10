@@ -1,0 +1,5 @@
+ACCOUNT_EXISTS = "Account already exists"
+INVALID_EMAIL = "Invalid email"
+EMAIL_NOT_CONFIRMED = "Email not confirmed"
+INVALID_PASSWORD = "Invalid password"
+ITEM_NOT_FOUND = "Item not found"

@@ -1,0 +1,5 @@
+.env
+test.db
+.ruff_cache
+.pytest_cache
+.idea
